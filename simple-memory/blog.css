@@ -51,6 +51,7 @@ h1.entrylistTitle {
 	color: grey;
 }
 
+
 /* 标题的Logo */
 #blogLogo {
 	float: left;
@@ -62,7 +63,7 @@ h1.entrylistTitle {
 /* 标题与Logo中线对齐 */
 #blogTitle {
 /* 	display: none; */
-    margin-left: 60px;
+/*     margin-left: 60px; */
 }
 #blogTitle > h1 {
 	line-height: 70px;
@@ -79,16 +80,16 @@ div#navigator {
 	border: none;
 	height: auto;
 	margin: 0;
-	width: 100%;
 }
 
 ul#navList {
-	width: 90%;
+	width: 92%;
 	border-top: 1px solid #ccc;
 	border-bottom: 1px solid #ccc;
+	margin-top: 10px;
+	margin-bottom: 25px;
 	/* 	min-height: 0px; */
 	/* 	float: right; */
-	margin: 15px auto 15px 60px;
 }
 
 #navList > li {
@@ -121,23 +122,14 @@ ul#navList {
 
 /*博文主体内容占据版面，忽略侧边信息栏*/
 #mainContent {
-	width: 115%;
-	margin-left: -200px;
+	width: 116%;
+	margin-left: -210px;
 	margin-top: 10px;
 }
 
 /* 首页的整个header */
 #header {
-/* 	display: flex;
-	margin: 0px;
-	padding: 0;
-	justify-content: space-between;
-	z-index: 999;
-	background: aliceblue;
-	position: fixed;
-	left: 0;
-	right: 0;
-	border-bottom: 1px solid #ccc !important; */
+	margin-left: 50px;
 }
 /*整个页面*/
 #home {
