@@ -1,4 +1,5 @@
-
+/*顶部官方导航栏*/
+#top_nav { display: none;};
 /* 「评论列表」和「发表评论」和「随笔分类」和「相册」这几个个title */
 .feedback_area_title, 
 #commentform_title, 
@@ -313,6 +314,8 @@ dt:hover {
 /* 正文插入的图片 */
 #cnblogs_post_body img {
 	border-radius: 10px;
+	display: block;
+	margin: auto;
 }
 /*正文插入的超链接*/
 .postBody a {
