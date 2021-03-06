@@ -105,7 +105,7 @@
 
             var p = document.createElement('p');
             divSideBarTab.appendChild(p);
-            var txt = document.createTextNode('📚目录');
+            var txt = document.createTextNode('📖目录');
             p.setAttribute('id', 'catalogHeadTitle');
             p.appendChild(txt);
 
@@ -139,7 +139,7 @@
                             break;
                         case st:    //若为子标题
                             item = document.createElement("dd");
-                            var itemtext = document.createTextNode('▪ ' + nodetext);
+                            var itemtext = document.createTextNode('• ' + nodetext);
                             break;
                     }
 
@@ -165,7 +165,7 @@
                 divSideBar.onclick = function () {
                     var status = divSideBarContents.style.display;
                     if (status == 'block') {
-                        document.getElementById('catalogHeadTitle').innerText = '📚目录';
+                        document.getElementById('catalogHeadTitle').innerText = '📖目录';
                         divSideBarTab.style.borderRadius = '6px';
                         divSideBarContents.style.display = 'none';
                     } else if (status == 'none') {

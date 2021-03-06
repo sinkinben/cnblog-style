@@ -1,5 +1,7 @@
-/*顶部官方导航栏*/
-#top_nav { display: none;};
+/*顶部官方导航栏, 广告*/
+#top_nav, #bannerbar
+{ display: none;} 
+
 /* 「评论列表」和「发表评论」和「随笔分类」和「相册」这几个个title */
 .feedback_area_title, 
 #commentform_title, 
@@ -102,8 +104,9 @@ ul#navList {
 }
 
 #navList a {
-	width: auto;
-	padding: 0;
+    height: auto;
+    width: auto;
+    padding: 0;
     font-size: 13.5px;
 }
 
@@ -124,7 +127,7 @@ ul#navList {
 /*博文主体内容占据版面，忽略侧边信息栏*/
 #mainContent {
 	width: 116%;
-	margin-left: -210px;
+	margin-left: -212px;
 	margin-top: 10px;
 }
 
@@ -166,7 +169,11 @@ div.day > div.postTitle {
 .entrylistItem {
 	padding: 0px;
 }
-
+/* 随笔分类title下多余的分割线 */
+#mainContent > .forFlow > .entrylist > .entrylistTitle
+{
+    display: none;
+}
 /* 代码样式：包括代码块和行内代码 */
 .cnblogs-markdown .hljs, .cnblogs-post-body .hljs,
 .cnblogs-markdown code, .cnblogs-post-body code {
@@ -185,7 +192,11 @@ div.day > div.postTitle {
 .cnblogs-markdown code, .cnblogs-post-body code {
 	margin: 0;
 }
-
+/* 引用区域的行内代码，评论区代码，取消背景颜色 */
+.postBody blockquote code,
+.feedbackCon .blog_comment_body code{
+	background: none !important;
+}
 /* markdown引用 */
 #topics .postBody blockquote {
 	border: none;
@@ -195,20 +206,25 @@ div.day > div.postTitle {
 	color: gray;
 	padding-left: 30px;
 }
-/* 顶部的翻页部件pager */
-/* 文章末尾的推荐，上一篇，下一篇等信息的隐藏 */
-/* 底部广告链接隐藏*/
+
+/* 发表评论旁边的文字广告 */
+#commentform_title > a {
+    display: none;
+}
+
 /* 图片广告隐藏*/
 /* 相关博文隐藏*/
 /* 评论的支持与反对按钮 */
-#homepage_top_pager,
-#blog_post_info,
-#post_next_prev,
-#ad_t2,
+#homepage_top_pager, /* 顶部的翻页部件pager */
+#blog_post_info,     /* 文章末尾的推荐，上一篇，下一篇等信息的隐藏 */
+#post_next_prev,     /* 上一篇，下一篇*/
+#ad_t2, 
+.under-post-card,
 #HistoryToday, 
 .recomm-block,
 .c_ad_block,
-.comment_vote {
+.comment_vote,
+div.under-comment-nav {
 	display: none;
 }
 
@@ -249,8 +265,8 @@ div.day > div.postTitle {
 	float: left;
 	overflow: auto;
 	overflow-x: hidden !important;
-	width: 194px;
-	max-height: 320px;
+	min-width: 194px;
+	max-height: 500px;
 	border: 1px solid #ccc;
 	border-radius: 6px;
 	background: #ffffff;
@@ -280,6 +296,7 @@ dt:hover {
 
 #sideBarContents dd {
 	padding-left: 20px;
+        padding-right: 8px;
 }
 
 
@@ -309,6 +326,7 @@ dt:hover {
 /* 表格自动占满页面的宽度 */
 #cnblogs_post_body table {
 	width: 100%;
+        display: inline-table !important;
 }
 
 /* 正文插入的图片 */
@@ -364,7 +382,7 @@ ul.submenu {
 }*/
 .submenu li {
 	width: 100%;
-	padding: 5px 0px 3px 5px;
+	padding: 5px 0px 5px 5px;
 }
 
 /* 鼠标进入时显示submenu */

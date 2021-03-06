@@ -62,7 +62,7 @@
         document.getElementById('navList').innerHTML = '';
 
         // add new items
-        $navList.cnblogsNav('addNav', index++, '🏠 Home', 'https://www.cnblogs.com/sinkinben/', 'menuItemHome');
+        $navList.cnblogsNav('addNav', index++, '🏡 Home', 'https://www.cnblogs.com/sinkinben/', 'menuItemHome');
         $navList.cnblogsNav('addNav', index++, '📧 Email', 'mailto:sinkinben@qq.com', 'menuItemEmail');
         $navList.cnblogsNav('addNav', index++, '👨🏻‍🎓 About', 'https://www.cnblogs.com/sinkinben/p/12953243.html', 'menuItemAbout');
         $navList.cnblogsNav('addNav', index++, '🔗 Links', 'javascript:void(0)', 'menuItemLinks');
@@ -75,6 +75,8 @@
         addSubmenuItem('menuItemLinks', '📘 Zhihu', 'https://www.zhihu.com/people/sinkinben');
         addSubmenuItem('menuItemLinks', '📗 Douban', 'https://www.douban.com/people/sinkinben/');
         addSubmenuItem('menuItemLinks', '🌎 Facebook', 'https://www.facebook.com/sinkinben/');
+        addSubmenuItem('menuItemLinks', '👨‍🌾 Leetcode', 'https://leetcode-cn.com/u/sinkinben/');
+        addSubmenuItem('menuItemLinks', '🎵 Netease', 'https://music.163.com/#/user/home?id=261973554');
 
 
         // click again to hide the submenu on mobile
@@ -93,10 +95,11 @@
 
         // change the browser tab icon
         document.getElementById('favicon').href = 'https://blog-static.cnblogs.com/files/sinkinben/Mario.gif';
+        // document.getElementById('favicon').href = 'https://cdn.accounts.nintendo.com/account/images/favicon.ico?t=202103010541';
 
         // change the title logo
         var logo = document.getElementById('blogLogo');
-        logo.setAttribute('src', 'https://blog-static.cnblogs.com/files/sinkinben/Snorlax.gif');
+        logo.setAttribute('src', 'https://files.cnblogs.com/files/sinkinben/Snorlax.gif');
         logo.setAttribute('alt', 'Administrator');
         logo.style.transform = 'rotateY(180deg)';
         // click the title logo to jump to admin backend
