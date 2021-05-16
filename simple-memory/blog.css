@@ -69,14 +69,14 @@ a:active {
 }
 #home {
 	border-radius:10px;
-	margin:0 auto;
 	width:950px;
 	background-color:#fff;
 	padding:30px;
-	margin-top:50px;
-	margin-bottom:50px;
-	box-shadow:0 2px 6px rgba(100,100,100,.3)
+        margin: 50px auto;
+	box-shadow:0 2px 15px rgba(100,100,100,.3)
 }
+/* 为了让 home 底部的 margin-bottom 显示正常 */
+#page_end_html { min-height: 1px; }
 #header {
 	padding-bottom:5px;
 	margin-top:10px;
@@ -106,9 +106,7 @@ a:active {
 	color:#757575;
 	float:left
 }
-#blogLogo {
-	float:right
-}
+
 #navigator {
 	font-size:13px;
 	border-bottom:1px solid #ededed;
@@ -157,13 +155,7 @@ ul#navList {
 	padding:0;
 	font-size:13.5px;
 }
-.blogStats {
-	float:right;
-	color:#757575;
-	margin-top:19px;
-	margin-right:2px;
-	text-align:right
-}
+
 #main {
 	width:116%;
 	text-align:left;
@@ -484,12 +476,10 @@ ul#navList {
 	border-bottom:2px solid #ccc
 }
 .louzhu {
-	background:transparent url('/images/icoLouZhu.gif') no-repeat scroll right top;
-	padding-right:16px
+	/*background:transparent url('/images/icoLouZhu.gif') no-repeat scroll right top;*/
+	/*padding-right:16px;*/
 }
-.feedbackListSubtitle {
-	color:#a8a8a8
-}
+
 .feedbackListSubtitle a:link,.feedbackListSubtitle a:visited,.feedbackListSubtitle a:active {
 	color:#21759b;
 	font-weight:bold
@@ -506,14 +496,7 @@ ul#navList {
 	text-align:right;
 	float:right
 }
-.feedbackCon {
-	border-bottom:1px solid #eee;
-	padding:10px 20px 10px 5px;
-	min-height:35px;
-	_height:35px;
-	margin-bottom:1em;
-	line-height:1.5
-}
+
 #divRefreshComments {
 	text-align:right;
 	margin-bottom:10px
@@ -662,20 +645,16 @@ ul#navList {
 	background:#333
 }
 .entrylistTitle,.PostListTitle,.thumbTitle {
-	margin-bottom:25px;
-	height:38px;
-	line-height:38px;
-	font-size:16px;
-	border-bottom:2px solid #e6e6e6;
+	font-size: 18px;
 	color:#21759b
 }
 .entrylistDescription {
 	color:#666;
-	text-align:right;
+        font-size: 15px;
 	padding-top:5px;
-	padding-bottom:5px;
+	padding-bottom:10px;
 	padding-right:10px;
-	margin-bottom:10px
+	margin-bottom:10px;
 }
 .entrylistItem {
 	min-height:20px;
@@ -744,20 +723,19 @@ ul#navList {
 .pager a:hover {
 	background:#000
 }
+
+#myposts{
+    margin-left: 0px;
+}
 .PostList {
 	border-bottom:1px solid #ccc;
 	clear:both;
 	min-height:1.5em;
 	_height:1.5em;
-	padding-top:20px;
-	margin-bottom:20px;
-	padding-bottom:20px
 }
 .postTitl2 {
 	float:left;
-	padding-top:10px;
-	padding-bottom:10px;
-	font-size:14px
+	font-size:15px
 }
 .postDesc2 {
 	color:#666;
@@ -858,11 +836,8 @@ ul#navList {
 .feedbackListSubtitle {
 	clear:both;
 	color:#a8a8a8;
-	padding:8px 5px
 }
-.feedbackItem {
-	margin-top:30px
-}
+
 .divPhoto {
 	border:1px solid #ccc;
 	padding:2px;
@@ -876,16 +851,7 @@ ul#navList {
 	padding-right:10px;
 	margin-bottom:30px
 }
-#footer {
-	color:#686868;
-	text-align:center;
-	min-height:15px;
-	_height:15px;
-	border-top:1px solid #ededed;
-	margin-top:50px;
-	padding-top:10px;
-	margin-bottom:10px
-}
+
 .personInfo {
 	margin-bottom:20px
 }
@@ -902,15 +868,9 @@ ul#navList {
 	margin:0 auto 1em auto
 }
 .postBody h2 {
-	font-size:150%;
-	margin:15px auto 2px auto;
-	font-weight:bold
+    margin-top: 40px !important;
 }
-.postBody h3 {
-	font-size:120%;
-	margin:15px auto 2px auto;
-	font-weight:bold
-}
+
 .postBody h4 {
 	font-size:110%;
 	margin:15px auto 2px auto;
@@ -926,9 +886,10 @@ ul#navList {
 .postBody a:link,.postBody a:visited,.postBody a:active {
 	text-decoration:underline
 }
-.postCon a:link,.postCon a:visited,.postCon a:active {
+.postCon a:link,.postCon a:visited,.postCon a:active{
 	text-decoration:underline
 }
+.c_b_p_desc_readmore { text-decoration:underline !important; }
 .postBody ul,.postCon ul {
 	margin-left:2em
 }
@@ -936,13 +897,7 @@ ul#navList {
 	list-style-type:disc;
 	margin-bottom:1em
 }
-.postBody blockquote {
-	background:url('images/comment.gif') no-repeat 25px 0;
-	min-height:35px;
-	_height:35px;
-	line-height:1.6em;
-	color:#333
-}
+
 .myposts_title {
 	font-weight:bold;
 	text-align:center
@@ -962,37 +917,40 @@ ul#navList {
 }
 h1.entrylistTitle {
 	font-size:20px;
+        border:none;
 }
 #ViewPicture1_GalleryImage {
 	max-width:100%;
 }
+
+.feedbackItem {
+	margin:20px auto;
+	border-radius:10px;
+	background:aliceblue;
+	color:grey;
+    padding: 20px;
+}
 .feedbackListSubtitle {
-	padding:10px;
+    margin-bottom: 10px;
 	font-size:13px;
 }
 .feedbackCon {
-	font-size:14px;
+	font-size:15px;
 	line-height:1.8;
 	min-height:auto;
-	border:none;
 	margin:0 0;
-	padding:0px 20px 10px 10px;
 }
+
 #comment_form_container .comment_textarea {
 	width:100%;
 }
 #tbCommentBody {
 	min-height:200px;
 }
-.feedbackItem {
-	margin:20px auto;
-	border-radius:10px;
-	background:aliceblue;
-	color:grey;
-}
+
 #blogLogo {
 	float:left;
-	height:60px;
+	height:70px;
 	margin-right:20px;
 }
 #blogTitle {
@@ -1035,6 +993,11 @@ div.day > div.postTitle {
 #mainContent > .forFlow > .entrylist > .entrylistTitle {
 	display:none;
 }
+
+#mainContent > .forFlow > .pager:nth-of-type(1) {
+    display: none;
+}
+
 .cnblogs-markdown .hljs,.cnblogs-post-body .hljs,.cnblogs-markdown code,.cnblogs-post-body code {
 	border:none !important;
 	font-size:14px !important;
@@ -1057,6 +1020,12 @@ div.day > div.postTitle {
 	background:aliceblue;
 	color:gray;
 	padding-left:30px;
+	padding-right: 30px;
+}
+.postBody blockquote {
+	min-height:35px;
+	_height:35px;
+	line-height:1.6em;
 }
 #commentform_title > a {
 	display:none;
@@ -1123,6 +1092,7 @@ div.day > div.postTitle {
 #cnblogs_post_body h3 {
 	font-size:20px;
 	color:#21759b;
+        margin-top: 30px;
 }
 #cnblogs_post_body table {
 	width:100%;
@@ -1133,11 +1103,13 @@ div.day > div.postTitle {
 	display:block;
 	margin:auto;
 }
-.postBody a {
+.postBody a,
+.feedbackCon a{
 	text-decoration:none !important;
 	color:#0366d6;
 }
-.postBody a:hover {
+.postBody a:hover,
+.feedbackCon a:hover{
 	border-bottom:1px dashed #0366d6;
 }
 h1,h2,h3,h4,h5,h6,.postTitle > .postTitle2,.entrylistPosttitle > .entrylistItemTitle {
@@ -1158,10 +1130,12 @@ ul.submenu {
 	padding:5px 0px 5px 5px;
 }
 #footer {
-	line-height:1.7;
-	border-top:none;
-	padding-top:0;
-	margin-bottom:0;
+    color: #686868;
+    text-align: center;
+    min-height: 15px;
+    _height: 15px;
+    margin-top: 60px;
+    line-height:1.7;
 }
 .hljs-keyword,.hljs-literal,.hljs-built_in {
 	color:blue;
@@ -1364,7 +1338,7 @@ ul.submenu {
         margin-left:0 !important;
     }
     #footer {
-        display:none;
+        /*display:none;*/
     }    
 }
 
